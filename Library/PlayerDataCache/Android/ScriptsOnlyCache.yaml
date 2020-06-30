@@ -1,9 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ONSPSettings
+    - OVRInputAxis1DAction
     - OVRInputAxis2DAction
     - OVRTouchSample.Hand
     - OVRTouchSample.HandPose
+    - OculusIntegrationForVRTK.Tracking.Velocity.OVRAnchorVelocityEstimator
+    - TakeItOut
     - TeleporterActivation
     - TeleporterSelection
     Oculus.VR.Editor.dll:
@@ -16,15 +20,41 @@ ScriptsOnlyBuild:
     - OVRManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
     VRTK.Prefabs.Runtime.dll:
     - VRTK.Prefabs.CameraRig.TrackedAlias.TrackedAliasConfigurator
     - VRTK.Prefabs.CameraRig.TrackedAlias.TrackedAliasFacade
     - VRTK.Prefabs.Helpers.AxisRotator.AxisRotatorConfigurator
     - VRTK.Prefabs.Helpers.AxisRotator.AxisRotatorFacade
+    - VRTK.Prefabs.Interactions.Interactables.Grab.Action.GrabInteractableFollowAction
+    - VRTK.Prefabs.Interactions.Interactables.Grab.Action.GrabInteractableSwapAction
+    - VRTK.Prefabs.Interactions.Interactables.Grab.GrabInteractableConfigurator
+    - VRTK.Prefabs.Interactions.Interactables.Grab.Provider.GrabInteractableStackInteractorProvider
+    - VRTK.Prefabs.Interactions.Interactables.Grab.Receiver.GrabInteractableReceiver
+    - VRTK.Prefabs.Interactions.Interactables.InteractableFacade
+    - VRTK.Prefabs.Interactions.Interactables.Touch.TouchInteractableConfigurator
+    - VRTK.Prefabs.Interactions.Interactors.ComponentTags.StartGrabbingTag
+    - VRTK.Prefabs.Interactions.Interactors.ComponentTags.StartTouchingTag
+    - VRTK.Prefabs.Interactions.Interactors.ComponentTags.StopGrabbingTag
+    - VRTK.Prefabs.Interactions.Interactors.ComponentTags.StopTouchingTag
+    - VRTK.Prefabs.Interactions.Interactors.GrabInteractorConfigurator
+    - VRTK.Prefabs.Interactions.Interactors.InteractorExtractor
+    - VRTK.Prefabs.Interactions.Interactors.InteractorFacade
+    - VRTK.Prefabs.Interactions.Interactors.TouchInteractorConfigurator
     - VRTK.Prefabs.Locomotion.Movement.AxesToVector3.AxesToVector3Facade
     - VRTK.Prefabs.Locomotion.Movement.AxesToVector3.AxesToVector3Processor
     - VRTK.Prefabs.Locomotion.Movement.AxesToVector3.Vector3Cache
@@ -38,12 +68,17 @@ ScriptsOnlyBuild:
     - Zinnia.Action.SurfaceChangeAction
     - Zinnia.Cast.ParabolicLineCast
     - Zinnia.Cast.PhysicsCast
+    - Zinnia.Data.Collection.Counter.GameObjectObservableCounter
+    - Zinnia.Data.Collection.GameObjectRelations
     - Zinnia.Data.Collection.List.BehaviourObservableList
     - Zinnia.Data.Collection.List.FloatObservableList
     - Zinnia.Data.Collection.List.GameObjectObservableList
+    - Zinnia.Data.Collection.List.GameObjectRelationObservableList
+    - Zinnia.Data.Collection.List.SerializableTypeComponentObservableList
     - Zinnia.Data.Collection.List.UnityObjectObservableList
     - Zinnia.Data.Collection.List.Vector2ObservableList
     - Zinnia.Data.Collection.List.Vector3ObservableList
+    - Zinnia.Data.Collection.Stack.GameObjectObservableStack
     - Zinnia.Data.Operation.Extraction.TransformDirectionExtractor
     - Zinnia.Data.Operation.Mutation.TransformEulerRotationMutator
     - Zinnia.Data.Type.Transformation.Aggregation.FloatMultiplier
@@ -58,6 +93,7 @@ ScriptsOnlyBuild:
     - Zinnia.Event.BehaviourEnabledObserver
     - Zinnia.Event.Proxy.EmptyEventProxyEmitter
     - Zinnia.Event.Proxy.FloatEventProxyEmitter
+    - Zinnia.Event.Proxy.GameObjectEventProxyEmitter
     - Zinnia.Pointer.ObjectPointer
     - Zinnia.Pointer.PointerElement
     - Zinnia.Process.EventProcess
@@ -65,12 +101,30 @@ ScriptsOnlyBuild:
     - Zinnia.Process.Moment.MomentProcess
     - Zinnia.Process.Moment.MomentProcessor
     - Zinnia.Rule.ActiveInHierarchyRule
+    - Zinnia.Rule.AnyComponentTypeRule
     - Zinnia.Rule.AnyLayerRule
     - Zinnia.Rule.ListContainsRule
+    - Zinnia.Rule.NegationRule
     - Zinnia.Tracking.CameraRig.Collection.LinkedAliasAssociationCollectionObservableList
     - Zinnia.Tracking.CameraRig.LinkedAliasAssociationCollection
+    - Zinnia.Tracking.Collision.Active.ActiveCollisionConsumer
+    - Zinnia.Tracking.Collision.Active.ActiveCollisionPublisher
+    - Zinnia.Tracking.Collision.Active.ActiveCollisionsContainer
+    - Zinnia.Tracking.Collision.Active.CollisionPointContainer
+    - Zinnia.Tracking.Collision.Active.Event.Proxy.ActiveCollisionConsumerEventProxyEmitter
+    - Zinnia.Tracking.Collision.Active.Event.Proxy.ActiveCollisionsContainerEventProxyEmitter
+    - Zinnia.Tracking.Collision.Active.Operation.Extraction.NotifierContainerExtractor
+    - Zinnia.Tracking.Collision.Active.Operation.Extraction.PublisherContainerExtractor
+    - Zinnia.Tracking.Collision.Active.Operation.NearestSorter
+    - Zinnia.Tracking.Collision.Active.Operation.Slicer
+    - Zinnia.Tracking.Collision.CollisionNotifier
+    - Zinnia.Tracking.Collision.CollisionTracker
     - Zinnia.Tracking.Follow.Modifier.FollowModifier
+    - Zinnia.Tracking.Follow.Modifier.Property.Position.RigidbodyVelocity
     - Zinnia.Tracking.Follow.Modifier.Property.Position.TransformPosition
+    - Zinnia.Tracking.Follow.Modifier.Property.Rotation.RigidbodyAngularVelocity
+    - Zinnia.Tracking.Follow.Modifier.Property.Rotation.RigidbodyForceAtPosition
+    - Zinnia.Tracking.Follow.Modifier.Property.Rotation.TransformPositionDifferenceRotation
     - Zinnia.Tracking.Follow.Modifier.Property.Rotation.TransformRotation
     - Zinnia.Tracking.Follow.Modifier.Property.Scale.TransformScale
     - Zinnia.Tracking.Follow.ObjectDistanceComparator
@@ -79,7 +133,10 @@ ScriptsOnlyBuild:
     - Zinnia.Tracking.Modification.TransformPropertyApplier
     - Zinnia.Tracking.SurfaceLocator
     - Zinnia.Tracking.Velocity.Collection.VelocityTrackerObservableList
+    - Zinnia.Tracking.Velocity.ComponentTrackerProxy
+    - Zinnia.Tracking.Velocity.VelocityApplier
     - Zinnia.Tracking.Velocity.VelocityTrackerProcessor
+    - Zinnia.Utility.CountdownTimer
     - Zinnia.Visual.CameraColorOverlay
     - Zinnia.Visual.PointsRenderer
   sceneClasses:
@@ -102,9 +159,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
@@ -125,13 +186,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11338}
     - Class: 114
+      Script: {instanceID: 11352}
+    - Class: 114
       Script: {instanceID: 11364}
+    - Class: 114
+      Script: {instanceID: 11366}
     - Class: 114
       Script: {instanceID: 11372}
     - Class: 114
+      Script: {instanceID: 11448}
+    - Class: 114
       Script: {instanceID: 11456}
     - Class: 114
+      Script: {instanceID: 11476}
+    - Class: 114
       Script: {instanceID: 11540}
+    - Class: 114
+      Script: {instanceID: 11546}
     - Class: 114
       Script: {instanceID: 11570}
     - Class: 114
@@ -141,130 +212,232 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11670}
     - Class: 114
-      Script: {instanceID: 11912}
+      Script: {instanceID: 11718}
     - Class: 114
-      Script: {instanceID: 11928}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 11950}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 11962}
+      Script: {instanceID: 11914}
     - Class: 114
-      Script: {instanceID: 11968}
+      Script: {instanceID: 11920}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 11930}
     - Class: 114
-      Script: {instanceID: 12052}
+      Script: {instanceID: 11952}
     - Class: 114
-      Script: {instanceID: 12106}
+      Script: {instanceID: 11964}
     - Class: 114
-      Script: {instanceID: 12118}
+      Script: {instanceID: 11970}
     - Class: 114
-      Script: {instanceID: 12314}
+      Script: {instanceID: 12004}
     - Class: 114
-      Script: {instanceID: 12448}
+      Script: {instanceID: 12056}
     - Class: 114
-      Script: {instanceID: 12584}
+      Script: {instanceID: 12110}
     - Class: 114
-      Script: {instanceID: 12612}
+      Script: {instanceID: 12122}
     - Class: 114
-      Script: {instanceID: 12664}
+      Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 12688}
+      Script: {instanceID: 12318}
     - Class: 114
-      Script: {instanceID: 12768}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 12362}
     - Class: 114
-      Script: {instanceID: 12820}
+      Script: {instanceID: 12392}
     - Class: 114
-      Script: {instanceID: 12834}
+      Script: {instanceID: 12452}
     - Class: 114
-      Script: {instanceID: 12942}
+      Script: {instanceID: 12492}
     - Class: 114
-      Script: {instanceID: 12972}
+      Script: {instanceID: 12510}
     - Class: 114
-      Script: {instanceID: 12974}
+      Script: {instanceID: 12568}
     - Class: 114
-      Script: {instanceID: 12998}
+      Script: {instanceID: 12580}
     - Class: 114
-      Script: {instanceID: 13064}
+      Script: {instanceID: 12590}
     - Class: 114
-      Script: {instanceID: 13088}
+      Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 13170}
+      Script: {instanceID: 12618}
     - Class: 114
-      Script: {instanceID: 13186}
+      Script: {instanceID: 12672}
     - Class: 114
-      Script: {instanceID: 13238}
+      Script: {instanceID: 12696}
     - Class: 114
-      Script: {instanceID: 13268}
+      Script: {instanceID: 12776}
+    - Class: 114
+      Script: {instanceID: 12798}
+    - Class: 114
+      Script: {instanceID: 12800}
+    - Class: 114
+      Script: {instanceID: 12828}
+    - Class: 114
+      Script: {instanceID: 12830}
+    - Class: 114
+      Script: {instanceID: 12842}
+    - Class: 114
+      Script: {instanceID: 12884}
+    - Class: 114
+      Script: {instanceID: 12950}
+    - Class: 114
+      Script: {instanceID: 12964}
+    - Class: 114
+      Script: {instanceID: 12980}
+    - Class: 114
+      Script: {instanceID: 12982}
+    - Class: 114
+      Script: {instanceID: 13006}
+    - Class: 114
+      Script: {instanceID: 13032}
+    - Class: 114
+      Script: {instanceID: 13072}
+    - Class: 114
+      Script: {instanceID: 13090}
+    - Class: 114
+      Script: {instanceID: 13096}
+    - Class: 114
+      Script: {instanceID: 13122}
+    - Class: 114
+      Script: {instanceID: 13154}
+    - Class: 114
+      Script: {instanceID: 13160}
+    - Class: 114
+      Script: {instanceID: 13178}
+    - Class: 114
+      Script: {instanceID: 13194}
+    - Class: 114
+      Script: {instanceID: 13198}
+    - Class: 114
+      Script: {instanceID: 13244}
+    - Class: 114
+      Script: {instanceID: 13246}
     - Class: 114
       Script: {instanceID: 13272}
     - Class: 114
-      Script: {instanceID: 13328}
+      Script: {instanceID: 13276}
     - Class: 114
-      Script: {instanceID: 13460}
+      Script: {instanceID: 13280}
     - Class: 114
-      Script: {instanceID: 13518}
+      Script: {instanceID: 13336}
     - Class: 114
-      Script: {instanceID: 13564}
+      Script: {instanceID: 13386}
     - Class: 114
-      Script: {instanceID: 13568}
+      Script: {instanceID: 13440}
     - Class: 114
-      Script: {instanceID: 13830}
+      Script: {instanceID: 13470}
     - Class: 114
-      Script: {instanceID: 14088}
+      Script: {instanceID: 13506}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 14156}
+      Script: {instanceID: 13574}
     - Class: 114
-      Script: {instanceID: 14304}
+      Script: {instanceID: 13578}
     - Class: 114
-      Script: {instanceID: 14310}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 14338}
+      Script: {instanceID: 13794}
     - Class: 114
-      Script: {instanceID: 14408}
+      Script: {instanceID: 13814}
     - Class: 114
-      Script: {instanceID: 14412}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 14440}
+      Script: {instanceID: 13854}
     - Class: 114
-      Script: {instanceID: 14466}
+      Script: {instanceID: 14046}
     - Class: 114
-      Script: {instanceID: 14468}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14500}
+      Script: {instanceID: 14098}
     - Class: 114
-      Script: {instanceID: 14566}
+      Script: {instanceID: 14118}
     - Class: 114
-      Script: {instanceID: 14702}
+      Script: {instanceID: 14166}
     - Class: 114
-      Script: {instanceID: 14844}
+      Script: {instanceID: 14170}
     - Class: 114
-      Script: {instanceID: 14882}
+      Script: {instanceID: 14176}
     - Class: 114
-      Script: {instanceID: 14918}
+      Script: {instanceID: 14204}
     - Class: 114
-      Script: {instanceID: 14920}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 14930}
+      Script: {instanceID: 14314}
     - Class: 114
-      Script: {instanceID: 14984}
+      Script: {instanceID: 14320}
     - Class: 114
-      Script: {instanceID: 14992}
+      Script: {instanceID: 14324}
     - Class: 114
-      Script: {instanceID: 15056}
+      Script: {instanceID: 14336}
     - Class: 114
-      Script: {instanceID: 15080}
+      Script: {instanceID: 14344}
     - Class: 114
-      Script: {instanceID: 23946}
+      Script: {instanceID: 14352}
     - Class: 114
-      Script: {instanceID: 23948}
+      Script: {instanceID: 14422}
     - Class: 114
-      Script: {instanceID: 23950}
+      Script: {instanceID: 14426}
+    - Class: 114
+      Script: {instanceID: 14454}
+    - Class: 114
+      Script: {instanceID: 14480}
+    - Class: 114
+      Script: {instanceID: 14482}
+    - Class: 114
+      Script: {instanceID: 14502}
+    - Class: 114
+      Script: {instanceID: 14514}
+    - Class: 114
+      Script: {instanceID: 14516}
+    - Class: 114
+      Script: {instanceID: 14572}
+    - Class: 114
+      Script: {instanceID: 14582}
+    - Class: 114
+      Script: {instanceID: 14602}
+    - Class: 114
+      Script: {instanceID: 14616}
+    - Class: 114
+      Script: {instanceID: 14718}
+    - Class: 114
+      Script: {instanceID: 14860}
+    - Class: 114
+      Script: {instanceID: 14872}
+    - Class: 114
+      Script: {instanceID: 14874}
+    - Class: 114
+      Script: {instanceID: 14898}
+    - Class: 114
+      Script: {instanceID: 14934}
+    - Class: 114
+      Script: {instanceID: 14936}
+    - Class: 114
+      Script: {instanceID: 14946}
+    - Class: 114
+      Script: {instanceID: 15000}
+    - Class: 114
+      Script: {instanceID: 15008}
+    - Class: 114
+      Script: {instanceID: 15018}
+    - Class: 114
+      Script: {instanceID: 15024}
+    - Class: 114
+      Script: {instanceID: 15062}
+    - Class: 114
+      Script: {instanceID: 15072}
+    - Class: 114
+      Script: {instanceID: 15096}
+    - Class: 114
+      Script: {instanceID: 15130}
+    - Class: 114
+      Script: {instanceID: 44040}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -273,6 +446,12 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -649,6 +828,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 3afe59883dcf8c7ea85f6e1cdd25046d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRInputAxis1DAction
+  - hash:
+      serializedVersion: 2
       Hash: 7ffa5a0944fe3f23d99ec567ae7ae898
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -827,6 +1012,12 @@ ScriptsOnlyBuild:
     assemblyName: Zinnia.Runtime.dll
     namespaceName: Zinnia.Action
     className: SurfaceChangeAction
+  - hash:
+      serializedVersion: 2
+      Hash: c7cd304ccd604db7a85ae93adf0f2e02
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NumpadLogic
   - hash:
       serializedVersion: 2
       Hash: e7dac3c9100823d6e750582bb7d6b5f8
@@ -1285,6 +1476,12 @@ ScriptsOnlyBuild:
     className: TouchInteractorConfigurator
   - hash:
       serializedVersion: 2
+      Hash: c1adfb73f1ebc233044d917f496ca5a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PointingGestureAction
+  - hash:
+      serializedVersion: 2
       Hash: 84f118e8bb01e4e536b4fe72b0493ca3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1379,6 +1576,12 @@ ScriptsOnlyBuild:
     assemblyName: Oculus.VR.dll
     namespaceName: 
     className: OVRPlatformMenu
+  - hash:
+      serializedVersion: 2
+      Hash: f4374c0fa4349ee2af66e42364a8ea48
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRInputButtonAction
   - hash:
       serializedVersion: 2
       Hash: 13f92b17c78a4c3226ff7fcb61bf1fe3
@@ -2015,6 +2218,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OculusSampleFramework
     className: FingerTipPokeToolView
+  - hash:
+      serializedVersion: 2
+      Hash: 502de787eb793ffb7bd8c494b488e4ad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleporterActivation
   - hash:
       serializedVersion: 2
       Hash: 7643d76970fa2ed168a388f2eaeac83a
@@ -2713,6 +2922,12 @@ ScriptsOnlyBuild:
     className: PhysicsCast
   - hash:
       serializedVersion: 2
+      Hash: a32023abe3b330270d75f3a88839ba07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRInputAxis2DAction
+  - hash:
+      serializedVersion: 2
       Hash: 747e0726e1bec109ba49208e106c41a5
     assemblyName: Zinnia.Runtime.dll
     namespaceName: Zinnia.Data.Collection.Stack
@@ -2729,6 +2944,12 @@ ScriptsOnlyBuild:
     assemblyName: Zinnia.Runtime.dll
     namespaceName: Zinnia.Tracking.Follow.Operation.Extraction
     className: ObjectDistanceComparatorEventDataExtractor
+  - hash:
+      serializedVersion: 2
+      Hash: 9bff49bd27d21d8660948593380a9425
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleporterSelection
   - hash:
       serializedVersion: 2
       Hash: 45be7c9c443c8d156084fae60067948f
@@ -2867,6 +3088,12 @@ ScriptsOnlyBuild:
     assemblyName: Zinnia.Runtime.dll
     namespaceName: Zinnia.Cast.Operation.Mutation
     className: PointsCastPropertyMutator
+  - hash:
+      serializedVersion: 2
+      Hash: c92ba38efbacd62ac18032508ca36e45
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenuLogic
   - hash:
       serializedVersion: 2
       Hash: c60b09ed8cd59996a16a7d6449997ee1
@@ -3331,6 +3558,12 @@ ScriptsOnlyBuild:
     className: PointerConfigurator
   - hash:
       serializedVersion: 2
+      Hash: 0a0ba90a6bb2b62d2ff14dd90985002d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PhysicalButtonPressed
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -3347,6 +3580,12 @@ ScriptsOnlyBuild:
     assemblyName: VRTK.Prefabs.Runtime.dll
     namespaceName: VRTK.Prefabs.Interactions.Interactables.Grab.Action
     className: GrabInteractableScaleAction
+  - hash:
+      serializedVersion: 2
+      Hash: c49b285dc2f637afb4d2ae2610d7a0b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRInputTouchAction
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -3367,64 +3606,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 3afe59883dcf8c7ea85f6e1cdd25046d
+      Hash: 3d5ceac67dbff3fc57775db466a52ea7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: OVRInputAxis1DAction
-  - hash:
-      serializedVersion: 2
-      Hash: c7cd304ccd604db7a85ae93adf0f2e02
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NumpadLogic
-  - hash:
-      serializedVersion: 2
-      Hash: c1adfb73f1ebc233044d917f496ca5a7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PointingGestureAction
-  - hash:
-      serializedVersion: 2
-      Hash: f4374c0fa4349ee2af66e42364a8ea48
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: OVRInputButtonAction
-  - hash:
-      serializedVersion: 2
-      Hash: 502de787eb793ffb7bd8c494b488e4ad
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TeleporterActivation
-  - hash:
-      serializedVersion: 2
-      Hash: a32023abe3b330270d75f3a88839ba07
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: OVRInputAxis2DAction
-  - hash:
-      serializedVersion: 2
-      Hash: 9bff49bd27d21d8660948593380a9425
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TeleporterSelection
-  - hash:
-      serializedVersion: 2
-      Hash: c92ba38efbacd62ac18032508ca36e45
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PauseMenuLogic
-  - hash:
-      serializedVersion: 2
-      Hash: 0a0ba90a6bb2b62d2ff14dd90985002d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PhysicalButtonPressed
-  - hash:
-      serializedVersion: 2
-      Hash: c49b285dc2f637afb4d2ae2610d7a0b2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: OVRInputTouchAction
+    className: TakeItOut
   platform: 13
   scenePathNames:
   - Assets/Scenes/Racoon City.unity

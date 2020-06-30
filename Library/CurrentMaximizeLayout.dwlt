@@ -47,9 +47,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 235.33334
+    x: 288
     y: 72.66667
-    width: 635
+    width: 581
     height: 289
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &3
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 235
+    width: 288
     height: 588
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -101,15 +101,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 72.66667
-    width: 234
+    width: 287
     height: 567
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1a2e0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 36f2ffffd4f7ffffeef7fffffcf7ffff70fbffff
+      m_ExpandedIDs: 52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -150,9 +150,9 @@ MonoBehaviour:
   - {fileID: 9}
   m_Position:
     serializedVersion: 2
-    x: 235
+    x: 288
     y: 0
-    width: 637
+    width: 583
     height: 588
   m_MinSize: {x: 402, y: 392}
   m_MaxSize: {x: 10002, y: 12090}
@@ -175,7 +175,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 637
+    width: 583
     height: 310
   m_MinSize: {x: 402, y: 121}
   m_MaxSize: {x: 2050, y: 2069}
@@ -207,9 +207,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 235.33334
+    x: 288
     y: 72.66667
-    width: 635
+    width: 581
     height: 289
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -222,9 +222,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.8745093, y: 0.59703654, z: 1.1205157}
+    m_Target: {x: -9.526097, y: 1.4062452, z: -6.035224}
     speed: 2
-    m_Value: {x: -2.8745093, y: 0.59703654, z: 1.1205157}
+    m_Value: {x: -9.526097, y: 1.4062452, z: -6.035224}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -270,13 +270,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.08081023, y: -0.6409893, z: 0.06813429, w: 0.7602374}
+    m_Target: {x: -0.08858998, y: 0.66775113, z: -0.08051681, w: -0.73470396}
     speed: 2
-    m_Value: {x: -0.08081023, y: 0.6409893, z: -0.068134286, w: -0.7602374}
+    m_Value: {x: -0.08858999, y: 0.66775113, z: -0.08051681, w: -0.73470396}
   m_Size:
-    m_Target: 6.8820353
+    m_Target: 3.8516085
     speed: 2
-    m_Value: 6.8820353
+    m_Value: 3.8516085
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -407,7 +407,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 310
-    width: 637
+    width: 583
     height: 278
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
@@ -438,9 +438,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 235.33334
+    x: 288
     y: 382.6667
-    width: 635
+    width: 581
     height: 257
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -456,20 +456,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages/com.unity.xr.oculus.android/Editor
+    - Assets/Environment/Japanese house/column
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Packages/com.unity.xr.oculus.android/Editor
+  - Assets/Environment/Japanese house/column
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\50716040\Desktop\Unity\Racoon prot
+  m_LastProjectPath: C:\Users\50716040\Documents\GitHub\Takarajima\Racoon_prot
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 183}
-    m_SelectedIDs: 98480000
-    m_LastClickedID: 18584
-    m_ExpandedIDs: 000000009e450000a0450000a4450000a8450000ac450000ae450000b0450000b2450000124600003446000084480000864800009648000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 10}
+    m_SelectedIDs: 564a0000
+    m_LastClickedID: 19030
+    m_ExpandedIDs: 000000002a4a00002c4a00002e4a0000304a0000324a0000344a0000364a0000384a00003a4a00003c4a00003e4a0000404a0000524a0000544a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -497,7 +497,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009e450000a0450000a4450000a8450000ac450000ae450000b0450000b24500001246000034460000844800008648000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000002a4a00002c4a00002e4a0000304a0000324a0000344a0000364a0000384a00003a4a00003c4a00003e4a0000404a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -522,8 +522,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1a2e0000
-    m_LastClickedInstanceID: 11802
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000064b40000a2cbfeff
     m_RenameOverlay:
@@ -594,9 +594,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 872
+    x: 871
     y: 0
-    width: 408
+    width: 409
     height: 588
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -627,9 +627,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 872
+    x: 871.3334
     y: 72.66667
-    width: 407
+    width: 408
     height: 567
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
